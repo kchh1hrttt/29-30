@@ -13,8 +13,7 @@ lbl_font = 'Montserrat', 16
 readme_msg = CTkMessagebox(title='Сообщение', message='Открыть файл ReadMe?', icon='question',
                            option_1='Да', option_2='Нет', option_3='Да')
 if readme_msg.get() == 'Да':
-    os.open('readme.txt', flags=os.O_RDONLY)
-    print('hello')
+    os.startfile('readme.txt')
 
 main_frame = CTkFrame(root)
 main_frame.pack(fill=BOTH, expand=True)
